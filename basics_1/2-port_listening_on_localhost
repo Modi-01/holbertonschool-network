@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script to listen on port 98 on localhost and echo received data
+# Ensure netcat is installed: sudo apt-get install netcat
+
+# Listen on port 98 and echo received data
+while true; do
+  echo "Listening on port 98..."
+  nc -l -p 98 -q 1
+done
